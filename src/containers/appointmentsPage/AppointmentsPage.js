@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-export const AppointmentsPage = () => {
-  /*
-  Define state variables for 
-  appointment info
-  */
+export const AppointmentsPage = (props) => {
+  // Define state variables for appointment info
+  const contacts = props.contacts;
+  const appointments = props.appointments;
+  const addAppointment = props.addAppointment;
+  // local state variables
+  const [title, setTitle] = useState('');
+  const [contact, setContact] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /*
-    Add contact info and clear data  
-    */
+    // Add contact info and clear data  
    
   };
 

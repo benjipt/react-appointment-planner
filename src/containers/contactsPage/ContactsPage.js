@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ContactForm } from '../../components/contactForm/ContactForm'
 import { TileList } from '../../components/tileList/TileList'
 
-export const ContactsPage = () => {
+export const ContactsPage = (props) => {
   // Define state variables for contact info and duplicate check
   const contacts = props.contacts;
   const addContact = props.addContact;

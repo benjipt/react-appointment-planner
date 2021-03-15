@@ -47,7 +47,6 @@ export const ContactsPage = (props) => {
           email={email}
           setEmail={setEmail}
           duplicate={duplicate}
-          setDuplicate={setDuplicate}
           handleSubmit={handleSubmit}
         />
       </section>
